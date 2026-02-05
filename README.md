@@ -1,0 +1,22 @@
+## Connection to http://localhost:8080/h2-console
+
+![img.png](img/img.png)
+
+## Final file application.properties
+
+```properties
+spring.application.name=H2Database
+
+spring.datasource.url=jdbc:h2:file:/data/demo
+spring.datasource.driverClassName=org.h2.Driver
+spring.datasource.username=sa
+spring.datasource.password=password
+spring.jpa.database-platform=org.hibernate.dialect.H2Dialect
+
+spring.h2.console.enabled=true
+spring.jpa.defer-datasource-initialization=true
+
+spring.h2.console.path=/h2-console
+spring.h2.console.settings.trace=false
+spring.h2.console.settings.web-allow-others=false
+```
